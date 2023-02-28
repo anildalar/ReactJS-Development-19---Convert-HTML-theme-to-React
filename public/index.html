@@ -1,43 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+      <meta charset="utf-8">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+      <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+      <link rel="dns-prefetch" href="http://themes.googleusercontent.com" />
+
+      <link rel="dns-prefetch" href="http://ajax.googleapis.com" />
+      <link rel="dns-prefetch" href="http://cdnjs.cloudflare.com" />
+      <link rel="dns-prefetch" href="http://agorbatchev.typepad.com" />
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+      <title>Login - Mango: Slick and Responsive Admin Template</title>
+      <meta name="description" content="Mango is a slick and responsive Admin Template build with modern techniques like HTML5 and CSS3 to be used for backend solutions of any size.">
+      <meta name="author" content="Simon Stamm &amp; Markus Siemens">
+
+      
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    
+      <meta name="format-detection" content="telephone=no">
+
+      <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+      
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/grid.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/layout.css">
+
+    
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/icons.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/fonts/font-awesome.css">
+      
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery-ui-1.9.1.custom.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.chosen.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.cleditor.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.colorpicker.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.elfinder.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.fancybox.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.jgrowl.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/jquery.plupload.queue.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/syntaxhighlighter/shCore.css" />
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/external/syntaxhighlighter/shThemeDefault.css" />
+
+      
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/elements.css">
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/forms.css">
+
+      
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/print-invoice.css">
+
+      
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/typographics.css">
+
+    
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/media-queries.css">
+
+      
+      <link rel="stylesheet" href="%PUBLIC_URL%/css/ie-fixes.css">
+      
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+      <script>window.jQuery || document.write('<script src="%PUBLIC_URL%/js/libs/jquery-1.8.2.js"><\/script>')</script>
+
+      <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+      <script>window.jQuery.ui || document.write('<script src="%PUBLIC_URL%/js/libs/jquery-ui-1.9.1.js"><\/script>')</script>
+
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.8.2/lodash.js"></script>
+      <script>window._ || document.write('<script src="%PUBLIC_URL%/js/libs/lo-dash.js"><\/script>')</script>
+    
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.0.6/require.js"></script>
+      <script>window.require || document.write('<script src="%PUBLIC_URL%/js/libs/require-2.0.6.min.js"><\/script>')</script>
+
+      <script type="text/javascript">
+          window.WebFontConfig = {
+              google: { families: [ 'PT Sans:400,700' ] },
+              active: function(){ $(window).trigger('fontsloaded') }
+          };
+      </script>
+      <script defer async src="https://ajax.googleapis.com/ajax/libs/webfont/1.0.28/webfont.js"></script>
+
+      
+      <script src="%PUBLIC_URL%/js/mylibs/polyfills/modernizr-2.6.1.min.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/polyfills/respond.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/polyfills/matchmedia.js"></script>
+      
+      <script src="%PUBLIC_URL%/js/mylibs/jquery.hashchange.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/jquery.idle-timer.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/jquery.plusplus.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/jquery.scrollTo.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/jquery.ui.touch-punch.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/jquery.ui.multiaccordion.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/number-functions.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/fullstats/jquery.css-transform.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/fullstats/jquery.animate-css-rotate-scale.js"></script>
+      <script src="%PUBLIC_URL%/js/mylibs/forms/jquery.validate.js"></script>
+
+      
+      <script src="%PUBLIC_URL%/js/mango.js"></script>
+      <script src="%PUBLIC_URL%/js/plugins.js"></script>
+      <script src="%PUBLIC_URL%/js/script.js"></script>
+
+      
+      <script src="%PUBLIC_URL%/js/app.js"></script>
+
+      
+
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <body class=login>
+      <div id="root">
+        <!-- Loader -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <!-- Section id="login" -->
+      </div>
+      
+      <script>
+        $$.ready(function() {
+            $( "#dialog_add_client" ).dialog({
+                autoOpen: false,
+                modal: true,
+                width: 400,
+                open: function(){ $(this).parent().css('overflow', 'visible'); $$.utils.forms.resize() }
+            }).find('button.submit').click(function(){
+                var $el = $(this).parents('.ui-dialog-content');
+                if ($el.validate().form()) {
+                    $el.find('form')[0].reset();
+                    $el.dialog('close');
+                }
+            }).end().find('button.cancel').click(function(){
+                var $el = $(this).parents('.ui-dialog-content');
+                $el.find('form')[0].reset();
+                $el.dialog('close');;
+            });
+    
+            $( ".open-add-client-dialog" ).click(function() {
+                $( "#dialog_add_client" ).dialog( "open" );
+                return false;
+            });
+        });
+      </script>
+      <script>
+          $$.ready(function() {
+              $( "#dialog_message" ).dialog({
+                  autoOpen: false,
+                  width: 500,
+                  modal: true
+              }).find('button').click(function(){
+                  $(this).parents('.ui-dialog-content').dialog('close');
+              });
+
+              $( ".open-message-dialog" ).click(function() {
+                  $( "#dialog_message" ).dialog( "open" );
+                  return false;
+              });
+          });
+      </script>
+      <script>
+        $$.loaded();
+      </script>
+      <script>
+          $('#login').find('form').validationOptions({
+              rules: {
+                  "login_pw": {
+                      remote: {
+                          url: "extras/login.php",  // ATTENTION: Credentials sent as plain text, if you're not using HTTPS!
+                          type: "post",
+                          data: {
+                              login_name: function() {
+                                  return $('#login_name').val();
+                              }
+                          }
+                      }
+                  }
+              },
+              messages: {
+                  "login_pw": {
+                      remote: "Username/password are wrong."
+                  }
+              }
+          });
+      </script>
   </body>
 </html>
